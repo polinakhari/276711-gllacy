@@ -12,7 +12,7 @@ font-weight:bold;
 }
 h2 {
 font-size:35px;
-line-height:41;
+line-height:41px;
 font-weight:bold;
 }
 .clearfix::after {
@@ -24,58 +24,138 @@ font-weight:bold;
   width: 900px;
   margin: 0 auto;
   padding: 0 10px;
-	background-color:aquamarine;
+	background-color:cadetblue;
 		
 }
-.main_header {
-  margin-bottom: 255px;
-}
+
 .logo{
 	float: left;
   width: 154px;
 	margin-right:20px;
   min-height: 75px;
-	background-color:deeppink;
-}
+	}
 .main_navigation {
   float: left;
   width: 410px;
 	margin-right:5px;
-	background-color:brown;
-  min-height: 75px;
+	  min-height: 75px;
 }
 .user_block {
   float: left;
   width: 300px;
-	background-color:darkgreen;
-  min-height: 75px;
+	  min-height: 75px;
 }
 .working_time{
 float: right;
 width: 170px;
+	
 }
 .main_slider{
-  width: 880px;	
+  width: 900px;	
+	margin-top: 255px;
 	margin-bottom: 38px;
-	background-color:darkgreen;
-	
-}
-main{
-	background-color:darkgreen;
+		
 }
 .announce_wrapper{
-	background-color:dimgrey;
-	
+		margin-bottom:40px;	
+	margin-left:20px;
 	
 }
 .announce_block{
 	width: 420px;
-}
+	
+	}
 .announce_background1{
 float: left;	
 }
 .announce_background2{
 float: right;	
 }
+.catalog{
+width: 900px;	
+	margin-left:20px;
+	}
+.catalog_item{
+width: 200px;
+float: left;
+	margin-right:20px;
+margin-bottom: 35px;
+	
+}
+.catalog_item:nth-child(4n){
+	margin-right:0px;
+}
 
+.about_us{
+width: 900px;	
+margin-bottom: 40px;
+	margin-left:20px;
+	
+}
+.about_us_header{
+	float: left;
+	
+}
+.about_us_feature{
+float: left;	
+	width: 420px;
+	
+}
+.news_wrapper{
+width: 900px;	
+	margin-left:20px;
+margin-bottom: 40px;	
+}
+.news_item {
+float: left;	
+	width: 420px;
 
+	
+}
+.map{
+	width: 900px;	
+	
+}
+.address{
+float: right;
+	width: 300px;
+	margin-right:20px;
+}
+.main_footer{
+width: 900px;	
+margin-bottom: 40px;	
+}
+.social{
+float: left;
+	width: 185px;	
+	padding-top: 35px;
+}
+.main_footer_info{
+	float: left;
+	width: 380px;
+	padding-top: 35px;
+		
+}
+nav,.link_left,.link_right,.breadcrumbs,.page{
+font-size: 0; 	
+}
+
+nav li,.link_left li,.link_right li,.breadcrumbs li,.page a{
+	display:inline-block;
+	font-size: 14px;	
+}
+
+.footer_copyright{
+float: right;	
+	margin-right: 20px;
+}
+------------------------
+.filter{
+	width: 900px;	
+
+}
+.page{
+	float: right;
+	width: 200px;	
+	margin-bottom: 50px;	
+}
