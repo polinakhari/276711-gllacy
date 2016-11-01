@@ -15,3 +15,67 @@ font-size:35px;
 line-height:41;
 font-weight:bold;
 }
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.main_content_wrapper{
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+	background-color:aquamarine;
+		
+}
+.main_header {
+  margin-bottom: 255px;
+}
+.logo{
+	float: left;
+  width: 154px;
+	margin-right:20px;
+  min-height: 75px;
+	background-color:deeppink;
+}
+.main_navigation {
+  float: left;
+  width: 410px;
+	margin-right:5px;
+	background-color:brown;
+  min-height: 75px;
+}
+.user_block {
+  float: left;
+  width: 300px;
+	background-color:darkgreen;
+  min-height: 75px;
+}
+.working_time{
+float: right;
+width: 170px;
+}
+.main_slider{
+  width: 880px;	
+	margin-bottom: 38px;
+	background-color:darkgreen;
+	
+}
+main{
+	background-color:darkgreen;
+}
+.announce_wrapper{
+	background-color:dimgrey;
+	
+	
+}
+.announce_block{
+	width: 420px;
+}
+.announce_background1{
+float: left;	
+}
+.announce_background2{
+float: right;	
+}
+
+
