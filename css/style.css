@@ -1,19 +1,19 @@
 body {
-font-size:16px;
-line-height:22px;
-color:#FFFFFF;
-font-weight:normal;
-font-family:"Roboto", arial, sans-serif;;
+	font-size:16px;
+	line-height:22px;
+	color:#FFFFFF;
+	font-weight:normal;
+	font-family:"Roboto", arial, sans-serif;;
 }
 h1 {
-font-size:35px;
-line-height:41px;
-font-weight:bold;
+	font-size:35px;
+	line-height:41px;
+	font-weight:bold;
 }
 h2 {
-font-size:35px;
-line-height:41px;
-font-weight:bold;
+	font-size:35px;
+	line-height:41px;
+	font-weight:bold;
 }
 .clearfix::after {
 	content: "";
@@ -38,16 +38,16 @@ font-weight:bold;
   float: left;
   width: 410px;
 	margin-right:5px;
-	  min-height: 75px;
+	min-height: 75px;
 }
 .user_block {
   float: left;
   width: 300px;
-	  min-height: 75px;
-}
+	min-height: 75px;
+	}
 .working_time{
-float: right;
-width: 170px;
+	float: right;
+	width: 170px;
 	
 }
 .main_slider{
@@ -57,7 +57,7 @@ width: 170px;
 		
 }
 .announce_wrapper{
-		margin-bottom:40px;	
+	margin-bottom:40px;	
 	margin-left:20px;
 	
 }
@@ -66,29 +66,33 @@ width: 170px;
 	
 	}
 .announce_background1{
-float: left;	
+	float: left;	
 }
 .announce_background2{
-float: right;	
+	float: right;	
 }
 .catalog{
-width: 900px;	
-	margin-left:20px;
+	width: 900px;	
+	font-size: 0;
+
 	}
 .catalog_item{
-width: 200px;
-float: left;
+	width: 200px;
+	float: left;
 	margin-right:20px;
-margin-bottom: 35px;
-	
+	margin-bottom: 35px;
+	display:inline-block; 
+	vertical-align:top;
+	font-size:16px;
+	background-color: darkkhaki;
 }
 .catalog_item:nth-child(4n){
 	margin-right:0px;
 }
 
 .about_us{
-width: 900px;	
-margin-bottom: 40px;
+	width: 900px;	
+	margin-bottom: 40px;
 	margin-left:20px;
 	
 }
@@ -97,36 +101,34 @@ margin-bottom: 40px;
 	
 }
 .about_us_feature{
-float: left;	
+	float: left;	
 	width: 420px;
 	
 }
 .news_wrapper{
-width: 900px;	
+	width: 900px;	
 	margin-left:20px;
-margin-bottom: 40px;	
+	margin-bottom: 40px;	
 }
 .news_item {
-float: left;	
+	float: left;	
 	width: 420px;
 
-	
 }
-.map{
-	width: 900px;	
-	
-}
+
 .address{
-float: right;
+	float: right;
 	width: 300px;
 	margin-right:20px;
+	background-color:cadetblue;
 }
 .main_footer{
-width: 900px;	
-margin-bottom: 40px;	
+	width: 900px;	
+	margin-bottom: 40px;	
+	
 }
 .social{
-float: left;
+	float: left;
 	width: 185px;	
 	padding-top: 35px;
 }
@@ -134,24 +136,33 @@ float: left;
 	float: left;
 	width: 380px;
 	padding-top: 35px;
+	
 		
 }
 nav,.link_left,.link_right,.breadcrumbs,.page{
-font-size: 0; 	
+	font-size: 0; 	
 }
 
 nav li,.link_left li,.link_right li,.breadcrumbs li,.page a{
 	display:inline-block;
 	font-size: 14px;	
+	
+}
+nav li,.page a{
+	vertical-align:18px;
+}
+.link_left li,.link_right li,.breadcrumbs li{
+	vertical-align:16px;
 }
 
 .footer_copyright{
-float: right;	
+	float: right;	
 	margin-right: 20px;
 }
-------------------------
+
 .filter{
 	width: 900px;	
+
 
 }
 .page{
