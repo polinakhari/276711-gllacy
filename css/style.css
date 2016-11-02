@@ -58,12 +58,12 @@ h2 {
 }
 .announce_wrapper{
 	margin-bottom:40px;	
-	margin-left:20px;
+	
 	
 }
 .announce_block{
 	width: 420px;
-	
+	margin-left:20px;
 	}
 .announce_background1{
 	float: left;	
@@ -79,40 +79,39 @@ h2 {
 .catalog_item{
 	width: 200px;
 	float: left;
-	margin-right:20px;
+	margin-left:20px;
 	margin-bottom: 35px;
 	display:inline-block; 
 	vertical-align:top;
 	font-size:16px;
 	background-color: darkkhaki;
 }
-.catalog_item:nth-child(4n){
-	margin-right:0px;
-}
+
 
 .about_us{
 	width: 900px;	
 	margin-bottom: 40px;
-	margin-left:20px;
 	
 }
 .about_us_header{
 	float: left;
+	margin-left:20px;
 	
 }
 .about_us_feature{
 	float: left;	
 	width: 420px;
+	margin-left:20px;
 	
 }
 .news_wrapper{
-	width: 900px;	
-	margin-left:20px;
+	width: 900px;		
 	margin-bottom: 40px;	
 }
 .news_item {
 	float: left;	
 	width: 420px;
+	margin-left:20px;
 
 }
 
@@ -159,9 +158,13 @@ nav li,.page a{
 	float: right;	
 	margin-right: 20px;
 }
+.content_wrapper{
+	margin-left: 20px;
+}
 
 .filter{
 	width: 900px;	
+	margin-left: 20px;
 
 
 }
