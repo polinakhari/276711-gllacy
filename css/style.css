@@ -70,14 +70,8 @@ li:hover .submenu {
 	min-height: 75px;
 	}
 /* поиск */
-search::before {
-	content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background: white;
-  }
-search_trigger{
+
+.search_trigger{
 	height: 32px;
 	position: relative;
 	 display:inline-block;
@@ -88,8 +82,15 @@ search_trigger{
 	background-color: antiquewhite;
 	
 }
+.search_trigger::before {
+	content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px
+  background: white;
+  }
 
-form.search {
+.search {
 	 position: absolute;
     
     display: block;
