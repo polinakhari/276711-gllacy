@@ -85,20 +85,32 @@ a.search_trigger{
 	margin-right: 30px;
 	  width: 32px;
 	border-radius: 50%;
+	background-color: antiquewhite;
 	
 }
 
 form.search {
 	 position: absolute;
     left: 1px;
-    display: none;
+    display: block;
     width: 340px;
     margin: 0;
     padding: 0;
+	z-index: 10;
+	border-radius: 5px;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility .5s
+	ease-out,opacity .5s
+	ease-in-out;
+	top: 36px;
+	left: -120px;
 	
     }
 div.search:hover form.search {
-    display: block;
+   visibility:visible;
+	opacity: 1;
+	
 }
 /* вход */
 a.login{
