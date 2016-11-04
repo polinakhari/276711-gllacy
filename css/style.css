@@ -3,8 +3,8 @@ body {
 	line-height:22px;
 	color:#FFFFFF;
 	font-weight:normal;
-	font-family:"Roboto", arial, sans-serif;;
-}
+	font-family:"Roboto", arial, sans-serif;
+	}
 h1 {
 	font-size:35px;
 	line-height:41px;
@@ -20,12 +20,12 @@ h2 {
 	display: table;
 	clear: both;
 }
+
 .main_content_wrapper{
   width: 900px;
   margin: 0 auto;
   padding: 0 10px;
-	background-color:cadetblue;
-		
+	background-color: #849d8f;	
 }
 
 .logo{
@@ -40,11 +40,90 @@ h2 {
 	margin-right:5px;
 	min-height: 75px;
 }
+.main_navigation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* выпадающий список каталога */
+nav ul > li {
+   position: relative;
+    }
+
+.submenu {
+    position: absolute;
+    left: 1px;
+    display: none;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+li:hover .submenu {
+    display: block;
+}
+
 .user_block {
+	position: relative;
   float: left;
   width: 300px;
 	min-height: 75px;
 	}
+/* поиск */
+div.search::before {
+	content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: white;
+  }
+
+form.search {
+	 position: absolute;
+    left: 1px;
+    display: none;
+    width: 340px;
+    margin: 0;
+    padding: 0;
+	
+    }
+div.search:hover form.search {
+    display: block;
+}
+/* вход */
+a.login{
+		position: relative;
+	  width: 32px;
+}
+form.login {
+	 position: absolute;
+    left: 1px;
+    display: none;
+    width: 340px;
+    margin: 0;
+    padding: 0;
+	
+    }
+a.login:hover form.login {
+    display: block;
+}
+/* корзина */
+a.basket{
+		position: relative;
+	width: 50px;
+}
+div.basket {
+	position: absolute;
+    left: 1px;
+    display: none;
+    width: 340px;
+    margin: 0;
+    padding: 0;
+	
+    }
+a.basket:hover div.basket {
+    display: block;
+}
 .working_time{
 	float: right;
 	width: 170px;
