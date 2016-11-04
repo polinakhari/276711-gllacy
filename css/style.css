@@ -77,6 +77,16 @@ div.search::before {
   height: 32px;
   background: white;
   }
+a.search_trigger{
+	height: 32px;
+	position: relative;
+	 display:inline-block;
+	vertical-align:middle;
+	margin-right: 30px;
+	  width: 32px;
+	border-radius: 50%;
+	
+}
 
 form.search {
 	 position: absolute;
