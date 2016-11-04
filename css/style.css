@@ -91,26 +91,26 @@ li:hover .submenu {
   }
 
 .search {
-	 position: absolute;
-    
-    display: block;
+	 position: absolute;    
+    display: none;
     width: 340px;
     margin: 0;
     padding: 0;
 	z-index: 10;
 	border-radius: 5px;
-	visibility: hidden;
+	/*visibility: hidden;
 	opacity: 0;
 	transition: visibility .5s
 	ease-out,opacity .5s
-	ease-in-out;
+	ease-in-out;*/
 	top: 36px;
 	left: -120px;
 	
     }
 .search_trigger:hover .search {
-   visibility:visible;
-	opacity: 1;
+ /* поиск visibility:visible;
+	opacity: 1; */
+	display: block;
 	
 }
 /* вход */
