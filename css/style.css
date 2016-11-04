@@ -70,14 +70,14 @@ li:hover .submenu {
 	min-height: 75px;
 	}
 /* поиск */
-div.search::before {
+search::before {
 	content: "";
   position: absolute;
   width: 32px;
   height: 32px;
   background: white;
   }
-a.search_trigger{
+search_trigger{
 	height: 32px;
 	position: relative;
 	 display:inline-block;
@@ -91,7 +91,7 @@ a.search_trigger{
 
 form.search {
 	 position: absolute;
-    left: 1px;
+    
     display: block;
     width: 340px;
     margin: 0;
@@ -107,7 +107,7 @@ form.search {
 	left: -120px;
 	
     }
-div.search:hover form.search {
+.search_trigger:hover .search {
    visibility:visible;
 	opacity: 1;
 	
@@ -117,7 +117,7 @@ a.login{
 		position: relative;
 	  width: 32px;
 }
-form.login {
+.login {
 	 position: absolute;
     left: 1px;
     display: none;
@@ -126,7 +126,7 @@ form.login {
     padding: 0;
 	
     }
-a.login:hover form.login {
+.login:hover .login {
     display: block;
 }
 /* корзина */
