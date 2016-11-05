@@ -12,7 +12,7 @@
           <img src="img/logo.svg" width="154" height="64" alt="Глейси">
         </a>
         <nav class="main_navigation">
-          <ul>
+          <ul class="navigation">
             <li>
               <a href="#" class="main_navigation_link active">Каталог</a>
 							<ul class="submenu">
@@ -32,13 +32,12 @@
           </ul>
         </nav>
         <div class="user_block">
-        	<div class="search">
+        	<a class="search_trigger" href="#"></a>
 						<form class="search">
 						  <input type="search" id="search_btn" name="search">	
 							<label for="search_btn">Что ищем?</label>
-						</form>
-					</div>
-					<a class="login" href="#">Вход</a>	
+						</form>					
+					<a class="login_trigger" href="#">Вход</a>	
 					<form class="login">
 						<input type="email" id="email" name="email">
 						<label for="email">Электронная почта</label>
@@ -48,7 +47,7 @@
 						<a href="#">Забыли пароль?</a>
 						<a href="#">Новая регистрация</a>
 					</form>
-					<a class="basket" href="#">2 товара</a>
+					<a class="basket_trigger" href="#">Пусто</a>
 					<div class="basket">
 						<table>
 							<tr>
@@ -77,8 +76,10 @@
 			<main>
 				<div class="content_wrapper">
       	  <ul class="breadcrumbs">
-					  <li><a href="#">Главная</a></li>
-					  <li><a href="#">Каталог</a></li>
+					  <li><a href="#">Главная   </a></li>
+						<li>» </li>
+					  <li><a href="#">Каталог   </a></li> 
+						<li>» </li>
           	<li>Сливочное</li>
       	  </ul>
 				  <h1 class="main_title">Сливочное мороженое</h1>
@@ -92,14 +93,14 @@
 					  <option value="fat">по жирности</option>
           </select> 
 				  <span class="filter_name">Цена:100 руб. - 500 руб.</span>
-				  <div class="filter-price-range">
-				  	<div class="price-rabge-bar"></div>
-				  	<div class="price-rabge-diaposon"></div>
-					  <div class="price-rabge-min"></div>
-					  <div class="price-rabge-max"></div>
-			  	</div>				
-				  <div class="fat">
-				  	<span class="filter_name">Жирность:</span>
+				  <div class="filter_price_range">
+				  	<div class="price_rabge_bar"></div>
+				  	<div class="price_rabge_diaposon"></div>
+					  <div class="price_rabge_min"></div>
+					  <div class="price_rabge_max"></div>
+			  	</div>	
+					<span class="filter_name">Жирность:</span>
+				  <div class="fat">				  	
 				  	<input id="zero" type="radio" name="zero" >
 			  		<label for="zero">0%</label>
 						<input id="ten" type="radio" name="ten" >
@@ -109,8 +110,8 @@
 						<input id="above_30" type="radio" name="above_30" >
 						<label for="above_30">выше 30%</label>					
 					</div>
-					<div class="fillers">
-						<span class="filter_name">Наполнители:</span>
+					<span class="filter_name">Наполнители:</span>
+					<div class="fillers">						
 							<input id="choco" type="checkbox" name="choco" checked>
 							<label for="choco">Шоколадные</label>
 						<input id="sugar" type="checkbox" name="sugar" checked>
@@ -132,7 +133,7 @@
 					  </div>
 					  <div class="icecream_price"><span>310₽ </span>/кг</div>
 					  <div class="icecream_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
-					  <a href="#" class="btn">Быстрый просмотр</a>
+					  <a href="#" class="quick_view btn">Быстрый просмотр</a>
 				  </div>
 				
 					<div class="catalog_item">
@@ -141,7 +142,7 @@
 						</div>
 						<div class="icecream_price"><span>380₽</span>/кг</div>
 						<div class="icecream_description">Сливочно-кофейное с кусочками шоколада</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 				
 					<div class="catalog_item">
@@ -150,7 +151,7 @@
 						</div>
 						<div class="icecream_price"><span>355₽</span>/кг</div>
 						<div class="icecream_description">Сливочно-кулбничное с присыпкой из белого шоколада</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 				
 					<div class="catalog_item">
@@ -159,7 +160,7 @@
 						</div>
 						<div class="icecream_price"><span>415₽</span>/кг</div>
 						<div class="icecream_description">Сливочное крем-брюле с карамельной подливкой</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 				
 					<div class="catalog_item">
@@ -168,7 +169,7 @@
 						</div>
 						<div class="icecream_price"><span>325₽</span>/кг</div>
 						<div class="icecream_description">Сливочное с брусничным джемом</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 					
 					<div class="catalog_item">
@@ -177,7 +178,7 @@
 						</div>
 						<div class="icecream_price"><span>410₽</span>/кг</div>
 						<div class="icecream_description">Сливочное-черничное с цельными ягодами черники</div>
-				  	<a href="#" class="quick_view">Быстрый просмотр</a>
+				  	<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 					
 					<div class="catalog_item">
@@ -186,7 +187,7 @@
 						</div>
 						<div class="icecream_price"><span>375₽</span>/кг</div>
 						<div class="icecream_description">Сливочное-имонное с карамельной присыпкой</div>
-				  	<a href="#" class="quick_view">Быстрый просмотр</a>
+				  	<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 									
 					<div class="catalog_item">
@@ -195,7 +196,7 @@
 						</div>
 						<div class="icecream_price"><span>320₽</span>/кг</div>
 						<div class="icecream_description">Сливочное с шоколадной крошкой</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 				
 					<div class="catalog_item">
@@ -204,7 +205,7 @@
 						</div>
 						<div class="icecream_price"><span>440₽</span>/кг</div>
 						<div class="icecream_description">Сливочно-ванильное с кусочками шоколада</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 				
 					<div class="catalog_item">
@@ -213,7 +214,7 @@
 					</div>
 						<div class="icecream_price"><span>435₽</span>/кг</div>
 						<div class="icecream_description">Сливочное с ментоловым сиропом</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 				
 					<div class="catalog_item">
@@ -222,7 +223,7 @@
 						</div>
 						<div class="icecream_price"><span>355₽</span>/кг</div>
 						<div class="icecream_description">Сливочное с кусочками темного шоколада</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 				
 					<div class="catalog_item">
@@ -231,7 +232,7 @@
 						</div>
 						<div class="icecream_price"><span>420₽</span>/кг</div>
 						<div class="icecream_description">Сливочное с мятным сиропом</div>
-						<a href="#" class="quick_view">Быстрый просмотр</a>
+						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
 					<div class="page">
 						<div class="arrow arrow_prev"></div>
@@ -242,18 +243,20 @@
 						<a href="#">5</a>
 						<div class="arrow arrow_next"></div>
 			  </div>
+					
 				</section>
+			
 				
 			</main>
-			
-	    <footer class="main_footer clearfix">    		
+	
+	    <footer class="main_footer clearfix">  
+
 			  <section class="social">
-							<a class="social-btn social-btn-tw" href="#">Твиттер</a>
-							<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-							<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-							<a class="social-btn social-btn-vk" href="#">Вконтакте</a>					
-							
-						</section>
+					<a class="social_btn social_btn_tw" href="#">Твиттер</a>
+					<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
+					<a class="social_btn social_btn_vk" href="#">Вконтакте</a>	
+				</section>
 				<div class="main_footer_info">
 					<div class="link_left">
 						<ul>
