@@ -1,0 +1,113 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Untitled-1 {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -10px;
+}
+
+.sprite-Untitled-2 {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -49px;
+}
+
+.sprite-Untitled-3 {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -88px;
+}
+
+.sprite-Untitled-4 {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -125px;
+}
+
+.sprite-Untitled-5 {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -162px;
+}
+
+.sprite-Untitled-6 {
+    width: 31px;
+    height: 36px;
+    background-position: -10px -202px;
+}
+
+.sprite-Untitled-7 {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -258px;
+}
+
+.sprite-______ {
+    width: 39px;
+    height: 38px;
+    background-position: -10px -298px;
+}
+
+.sprite-_________ {
+    width: 49px;
+    height: 49px;
+    background-position: -10px -356px;
+}
+
+.sprite-checkbox {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -425px;
+}
+
+.sprite-cow {
+    width: 48px;
+    height: 49px;
+    background-position: -10px -465px;
+}
+
+.sprite-facebook {
+    width: 38px;
+    height: 38px;
+    background-position: -10px -534px;
+}
+
+.sprite-heart {
+    width: 15px;
+    height: 13px;
+    background-position: -10px -592px;
+}
+
+.sprite-hit {
+    width: 61px;
+    height: 61px;
+    background-position: -10px -625px;
+}
+
+.sprite-insta {
+    width: 38px;
+    height: 38px;
+    background-position: -10px -706px;
+}
+
+.sprite-leaf {
+    width: 49px;
+    height: 49px;
+    background-position: -10px -764px;
+}
+
+.sprite-thermometer {
+    width: 48px;
+    height: 49px;
+    background-position: -10px -833px;
+}
+
+.sprite-vk {
+    width: 38px;
+    height: 38px;
+    background-position: -10px -902px;
+}
