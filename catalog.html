@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-		<div class="main_content_wrapper">
-			<header class="main_header">
+		<div class="catalog_wrapper">
+		<div class="main_content_wrapper ">
+			<header class="main_header clearfix">
         <a href="index.html" class="logo">
           <img src="img/logo.svg" width="154" height="64" alt="Глейси">
         </a>
@@ -33,40 +35,45 @@
         </nav>
         <div class="user_block">
         	<a class="search_trigger" href="#"></a>
+						<div class="search_wrapper">
 						<form class="search">
-						  <input type="search" id="search_btn" name="search">	
+							<input type="search" id="search_btn" name="search" placeholder="Что ищем?">	
 							<label for="search_btn">Что ищем?</label>
-						</form>					
-					<a class="login_trigger" href="#">Вход</a>	
-					<form class="login">
-						<input type="email" id="email" name="email">
-						<label for="email">Электронная почта</label>
-						<input type="password" id="password" name="password">
-						<label for="password">Пароль</label>
-						<button type="button" class="login_btn">Войти</button>
-						<a href="#">Забыли пароль?</a>
-						<a href="#">Новая регистрация</a>
-					</form>
-					<a class="basket_trigger" href="#">Пусто</a>
-					<div class="basket">
+						</form>
+						</div>				
+					<a class="login_trigger" href="#">Вход</a>
+						<div class="login_wrapper">
+						<form class="login">
+							<input type="email" id="mail" name="email">
+							<label for="mail">Электронная почта</label>
+							<input type="password" id="password" name="password">
+							<label for="password">Пароль</label>
+							<button type="button" class="login_btn">Войти</button>
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</form>
+						</div>
+					<a class="basket_trigger" href="#">2 товара</a>
+					<div class="basket clearfix">
 						<table>
 							<tr>
-								<td><img src="img/x.png" width="11" height="11" alt="Крестик"></td>11111111111111111111111111111111111111111111111111111
+								<td><div class="cross"></div></td>
 								<td><img src="img/basket_icecream1.png" width="33" height="33" alt="Мороженое1"></td>
 								<td>Пломбир с апельсиновым джемом</td>
 								<td>1,5 кг x <span>200 руб. </span></td>
 								<td>300 руб.</td>
 							</tr>
 							<tr>
-								<td><img src="img/x.png" width="11" height="11" alt="Крестик"></td>
+								<td><div class="cross"></div></td>
 								<td><img src="img/basket_icecream2.png" width="33" height="33" alt="Мороженое2"></td>
 								<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 								<td>1,5 кг x <span>300 руб. </span></td>
 								<td>450 руб.</td>
 							</tr>
 						</table>
+						<hr>
 						<b>Итого: 750 руб.</b>
-						<a href="#">Оформить заказ</a>
+						<a href="#" class="btn">Оформить заказ</a>
 				  </div>
 			  </div>
 				<div class="working_time"> 
@@ -237,7 +244,7 @@
 					</div>
 					<div class="page">
 						<div class="arrow arrow_prev"></div>
-						<a href="#" class="active">1</a>
+						<a href="catalog.html" class="active">1</a>
 						<a href="#">2</a>
 						<a href="#">3</a>
 						<a href="#">4</a>
@@ -278,6 +285,7 @@
 				</section>		
 			</footer>			
 	  </div>
+		</div>
   </body>
 </html>
 		
