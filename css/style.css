@@ -378,7 +378,7 @@ background-color: #f8f7f4;
 	
 }
 .basket {
-	position: relative;
+	position: absolute;
   
   	width: 340px;
   margin: 0;
