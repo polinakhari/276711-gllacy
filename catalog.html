@@ -81,7 +81,7 @@
 				</div>
 			</header>
 			<main>
-				<div class="content_wrapper">
+				<div class="content_wrapper clearfix">
       	  <ul class="breadcrumbs">
 					  <li><a href="#">Главная   </a></li>
 						<li>» </li>
@@ -89,9 +89,10 @@
 						<li>» </li>
           	<li>Сливочное</li>
       	  </ul>
-				  <h1 class="main_title">Сливочное мороженое</h1>
+				  <h1 class="title_inner">Сливочное мороженое</h1>
     	  </div>
 			  <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+					<div class="sort_controls">
 				  <label for="sort" class="filter_name">Сортировка:</label> 
 				  <select id="sort" name="sort">
             <option value="popular">по популярности</option>
@@ -99,15 +100,27 @@
             <option value="price high">сначала дорогие</option>
 					  <option value="fat">по жирности</option>
           </select> 
-				  <span class="filter_name">Цена:100 руб. - 500 руб.</span>
+			</div>
 				  <div class="filter_price_range">
-				  	<div class="price_rabge_bar"></div>
-				  	<div class="price_rabge_diaposon"></div>
-					  <div class="price_rabge_min"></div>
-					  <div class="price_rabge_max"></div>
-			  	</div>	
-					<span class="filter_name">Жирность:</span>
-				  <div class="fat">				  	
+					<div class="filter_name">
+						<span>Цена:</span>
+						<label class="price_rabge_min"> <input name="min_price" type="text" value="100"></label>
+            <span>руб. - </span>
+						<label class="price_rabge_max"> <input name="max_price" type="text" value="500"></label>
+						<span>руб.</span>
+          </div>					
+				  <div class="range_controls">
+				  	<div class="price_rabge_bar">
+				  		<div class="price_rabge_diaposon"></div>
+						</div>
+					  <div class="toggle toggle_min"></div>
+            <div class="toggle toggle_max"></div>
+						</div>					  
+			  	</div>			   
+						<div class="fat_controls">
+							<span class="filter_name">Жирность:</span>
+				  <div class="fat">		
+						
 				  	<input id="zero" type="radio" name="zero" >
 			  		<label for="zero">0%</label>
 						<input id="ten" type="radio" name="ten" >
@@ -117,8 +130,11 @@
 						<input id="above_30" type="radio" name="above_30" >
 						<label for="above_30">выше 30%</label>					
 					</div>
+							</div>
+					<div class="fillers_controls">	
 					<span class="filter_name">Наполнители:</span>
-					<div class="fillers">						
+					<div class="fillers">	
+						
 							<input id="choco" type="checkbox" name="choco" checked>
 							<label for="choco">Шоколадные</label>
 						<input id="sugar" type="checkbox" name="sugar" checked>
@@ -129,8 +145,10 @@
 						<label for="syrup">Сиропы</label>
 						<input id="jam" type="checkbox" name="jam" >
 						<label for="jam">Джемы</label>			
-					</div>				
+					</div>
+					</div>
 				  <button type="submit" class="filter_btn">Применить</button>
+					
 			  </form>
 				
 			  <section class="catalog clearfix">	

@@ -269,6 +269,7 @@ background-color: #f8f7f4;
 	padding: 20px;
 	right: 250px;
 	width: 280px;
+	z-index: 100;
 	
 }
 .login label{
@@ -484,16 +485,76 @@ background-color: #f8f7f4;
 	text-decoration: underline;
 	color: white;	
 }
+.title_inner{
+	float: left;
+	font-size:35px;
+	line-height:41px;
+	font-weight: 700;
+	display: block;
+	margin: 0px;
+	
+}
 /*Фильтры в каталоге*/
-
+.sort_controls,.fat_controls,.fillers_controls,.filter_btn{
+	display: inline-block;
+	margin-bottom: 15px;
+}
 
 #sort,.fat,.fillers,.filter_btn{
 	background: rgba(255,255,255,.4);
 	padding: 10px;
 	border-radius: 20px;
-	color: #ffffff;
+	color: #ffffff;	
+	
+}
+.filter_price_range{
 	display: inline-block;
 	margin-bottom: 15px;
+}
+ .filter_name{
+	display: block;
+}
+.range_controls{
+	position: relative;
+	background: rgba(255,255,255,.4);
+	padding: 16px 15px;
+	border-radius: 20px;
+	color: #ffffff;	
+	margin-bottom: 15px;
+	width: 218px;
+	height: 4px;
+}
+.filter_name input{
+	border: 0px;
+	width: 30px;
+	background-color: transparent;
+	color:#ffffff;
+}
+.price_rabge_bar{	
+	height: 4px;
+	background: rgba(255,255,255,.5);
+}
+.price_rabge_diaposon{
+	position: absolute;
+	height: 4px;
+	background: #f8f7f4;
+	width: 59%;
+	left: 34px;
+}
+.filter_price_range .toggle{
+	position: absolute;	
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #f8f7f4;
+	cursor: pointer;
+	top:8px;
+}
+.toggle_min{
+	left:34px;
+}
+.toggle_max{
+	right: 66px;
 }
 
 /*слайдер с мороженками*/
@@ -957,7 +1018,7 @@ position: absolute;
 	float: right;
 	width: 200px;	
 	margin-bottom: 50px;	
-	word-spacing:22px;
+	
 	text-decoration: none;
 	position: relative
 }
@@ -966,31 +1027,22 @@ position: absolute;
 	color: #ffffff;
 	background-color: transparent;
 	transition:background-color .2s ease-in;
-}
-
-.page a:hover{
-	content: " ";
-	
 	width: 27px;
 	height: 27px;
-	border-radius: 50%;
-	background-color: rgba(255,255,255,.2);
-	text-align: center;	
+	margin-right: 2px;
+	border-radius: 50%;	
+	text-align: center;
+	vertical-align: middle;
+}
+
+.page a:not(.active):hover{	
+	background-color: rgba(255,255,255,.2);	
 	
 }
 .page .active{
 	background: rgba(255,255,255,1);
-	color: #000000;
-	position: absolute;
-	width: 27px;
-	height: 27px;
-	border-radius: 50%;
-
-	text-align: center;	
-	
+	color:#000000;	
 }
-
-
 
 .feedback{
 	display: none;
