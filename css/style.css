@@ -145,13 +145,24 @@ nav ul > li {
      color: #000000;
     padding: 9px 20px; 
            
-  
+  font-size: 14px;
     font-family: "Roboto", arial, sans-serif;
     display: block;
     background-color: transparent;
     transition: background-color .5s ease-out;
     
 	
+}
+.submenu_item:first-of-type a{
+  font-weight: 700;
+  padding: 11px 0;
+ 
+}
+.submenu_item:last-of-type a{
+  padding-bottom: 20px;
+}
+.submenu li{
+  display: block;
 }
 .submenu li:first-of-type{
 position: relative;
