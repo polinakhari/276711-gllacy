@@ -123,16 +123,18 @@ nav ul > li {
 	 padding: 0;
    list-style: none;
    background-color:#f8f7f4;
-	 border-radius: 14px;
+	 border-radius: 5px;
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility .5s ease-out,opacity .5s ease-in-out;
 	top: 41px;
-		
+	min-width: 143px;	
 	overflow: hidden;
 	font-size:14px;
 	line-height:16px;
-	font-family:"Roboto", arial, sans-serif;
+	font-family:"Roboto", sans-serif;
+  box-shadow: 0 20px 25px 0 rgba(0,0,0,.35);
+  
 	
 }
 .submenu li{
@@ -141,14 +143,29 @@ nav ul > li {
 
 .submenu_navigation_link{
      color: #000000;
-    padding: 14px 20px;
-    padding-right: 49px;
-    font-family: "PT Sans Narrow", arial, sans-serif;
+    padding: 9px 20px; 
+           
+  
+    font-family: "Roboto", arial, sans-serif;
     display: block;
     background-color: transparent;
     transition: background-color .5s ease-out;
     
 	
+}
+.submenu li:first-of-type{
+position: relative;
+  
+}
+.submenu li:first-of-type::after{
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left:6px;
+  height: 1px;
+  width: calc(100% - 15px);
+  background: rgba(53,53,53,.2);
+  
 }
 
 .submenu_navigation_link:hover{
@@ -1791,21 +1808,25 @@ border: 2px solid #d3d3d2;
 	
 }
 /*-------------------*/
-nav,.link_left,.link_right,.breadcrumbs,.page{
+.navigation,.link_left,.link_right,.breadcrumbs,.page{
 	font-size: 0; 	
 }
 
-nav li,.link_left li,.link_right li,.page a,.breadcrumbs li{
+.link_left li,.link_right li,.page a,.breadcrumbs li{
 	display:inline-block;
 	font-size: 16px;		
 }
-nav li{
-	font-size: 15px;		
-
+.navigation li{
+  font-size: 15px;
+  display: inline-block;
+  
 }
-
+.submenu{
+  font-size: 14px;
+}
 nav li{
-	line-height: 5px;
+	font-size: 14px;
+
 }
 
 .link_left li,.link_right li,.breadcrumbs {
