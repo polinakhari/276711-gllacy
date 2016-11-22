@@ -16,7 +16,37 @@ body > input[type="radio"] {
 ul{
 	padding: 0;		
 } 
+.navigation,.link_left,.link_right,.breadcrumbs,.page{
+	font-size: 0; 	
+}
 
+.link_left li,.link_right li,.page a,.breadcrumbs li{
+	display:inline-block;
+	font-size: 16px;		
+}
+.navigation li{
+  font-size: 15px;
+  display: inline-block;
+  
+}
+.submenu{
+  font-size: 14px;
+}
+nav li{
+	font-size: 14px;
+
+}
+
+.link_left li,.link_right li,.breadcrumbs {
+	line-height:16px;
+}
+.page a{
+    line-height: 25px;
+}
+.breadcrumbs li{
+  font-size: 14px;
+  line-height:16px;
+}
 .clearfix::after {
 	content: "";
 	display: table;
@@ -153,6 +183,7 @@ nav ul > li {
     
 	
 }
+
 .submenu_item:first-of-type a{
   font-weight: 700;
   padding: 11px 0;
@@ -1819,37 +1850,7 @@ border: 2px solid #d3d3d2;
 	
 }
 /*-------------------*/
-.navigation,.link_left,.link_right,.breadcrumbs,.page{
-	font-size: 0; 	
-}
 
-.link_left li,.link_right li,.page a,.breadcrumbs li{
-	display:inline-block;
-	font-size: 16px;		
-}
-.navigation li{
-  font-size: 15px;
-  display: inline-block;
-  
-}
-.submenu{
-  font-size: 14px;
-}
-nav li{
-	font-size: 14px;
-
-}
-
-.link_left li,.link_right li,.breadcrumbs {
-	line-height:16px;
-}
-.page a{
-    line-height: 25px;
-}
-.breadcrumbs li{
-  font-size: 14px;
-  line-height:16px;
-}
 
 
 @-webkit-keyframes@keyframes scale {
