@@ -35,45 +35,48 @@
         </nav>
         <div class="user_block">
         	<a class="search_trigger" href="#"></a>
-						<div class="search_wrapper">
+						
 						<form class="search">
-							<input type="search" id="search_btn" name="search" placeholder="Что ищем?">	
+							<input type="text" id="search_btn" name="search" required>	
 							<label for="search_btn">Что ищем?</label>
-						</form>
-						</div>				
+						</form>			
 					<a class="login_trigger" href="#">Вход</a>
 						<div class="login_wrapper">
 						<form class="login">
-							<input type="email" id="mail" name="email">
+							<input type="email" id="mail" name="email" required>
 							<label for="mail">Электронная почта</label>
-							<input type="password" id="password" name="password">
+							<input type="password" id="password" name="password" required>
 							<label for="password">Пароль</label>
 							<button type="button" class="login_btn">Войти</button>
+              <div class="sign_up">
 							<a href="#">Забыли пароль?</a>
 							<a href="#">Новая регистрация</a>
+              </div>
 						</form>
 						</div>
 					<a class="basket_trigger" href="#">2 товара</a>
 					<div class="basket clearfix">
 						<table>
 							<tr>
-								<td><div class="cross"></div></td>
-								<td><img src="img/basket_icecream1.png" width="33" height="33" alt="Мороженое1"></td>
-								<td>Пломбир с апельсиновым джемом</td>
-								<td>1,5 кг x <span>200 руб. </span></td>
-								<td>300 руб.</td>
+								<td class="one"><div class="cross"></div></td>
+								<td class="two"><img src="img/basket_icecream1.png" width="33" height="33" alt="Мороженое1"></td>
+								<td class="three">Пломбир с апельсиновым джемом</td>
+								<td class="four">1,5 кг x <span>200 руб. </span></td>
+								<td class="five">300 руб.</td>
 							</tr>
 							<tr>
-								<td><div class="cross"></div></td>
-								<td><img src="img/basket_icecream2.png" width="33" height="33" alt="Мороженое2"></td>
-								<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-								<td>1,5 кг x <span>300 руб. </span></td>
-								<td>450 руб.</td>
+								<td class="one"><div class="cross"></div></td>
+								<td class="two"><img src="img/basket_icecream2.png" width="33" height="33" alt="Мороженое2"></td>
+								<td class="three">Клубничный пломбир с присыпкой из белого шоколада</td>
+								<td class="four">1,5 кг x <span>300 руб. </span></td>
+								<td class="five">450 руб.</td>
 							</tr>
 						</table>
 						<hr>
+           <div class="checkout">
 						<b>Итого: 750 руб.</b>
 						<a href="#" class="btn">Оформить заказ</a>
+            </div>
 				  </div>
 			  </div>
 				<div class="working_time"> 
@@ -105,9 +108,9 @@
 					<div class="filter_name">
 						<span>Цена:</span>
 						<label class="price_rabge_min"> <input name="min_price" type="text" value="100"></label>
-            <span>руб. - </span>
+            <span>руб - </span>
 						<label class="price_rabge_max"> <input name="max_price" type="text" value="500"></label>
-						<span>руб.</span>
+						<span>руб</span>
           </div>					
 				  <div class="range_controls">
 				  	<div class="price_rabge_bar">
@@ -121,14 +124,14 @@
 							<span class="filter_name">Жирность:</span>
 				  <div class="fat">		
 						<label>
-							<input id="zero" type="radio" name="zero" ><span class="radio_button"></span>
+							<input id="zero" type="radio" name="fat" ><span class="radio_button"></span>
 			  		 0%</label>
-						<label><input id="ten" type="radio" name="ten" checked><span class="radio_button"></span>
+						<label><input id="ten" type="radio" name="fat" checked><span class="radio_button"></span>
 						 до 10%</label>
-						<label><input id="thirty" type="radio" name="thirty"><span class="radio_button"></span>
+						<label><input id="thirty" type="radio" name="fat"><span class="radio_button"></span>
 						до 30%</label>
-						<label><input id="above_30" type="radio" name="above_30"><span class="radio_button"></span>
-						>выше 30%</label>					
+						<label><input id="above_30" type="radio" name="fat"><span class="radio_button"></span>
+						выше 30%</label>					
 					</div>
 							</div>
 					<div class="fillers_controls">	
@@ -138,7 +141,7 @@
 						<label><input id="choco" type="checkbox" name="choco" checked>
 							<span class="checkbox_button"></span>Шоколадные</label>
 							<label><input id="sugar" type="checkbox" name="sugar" checked>
-						<span class="checkbox_button"></span>Сахарные писыпки</label>
+						<span class="checkbox_button"></span>Сахарные присыпки</label>
 							<label><input id="fruit" type="checkbox" name="fruit" >
 						<span class="checkbox_button"></span>Фрукты</label>
 							<label><input id="syrup" type="checkbox" name="syrup" >
@@ -158,7 +161,7 @@
 					  <div class="item_img">
 						  <img src="img/icecream1.png" width="200" height="200" alt="Мороженое">
 					  </div>
-					  <div class="icecream_price"><span>310₽ </span>/кг</div>
+					  <div class="icecream_price"><span>310 </span>/кг</div>
 					  <div class="icecream_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
 					  <a href="#" class="quick_view btn">Быстрый просмотр</a>
 				  </div>
@@ -167,7 +170,7 @@
 						<div class="item_img">
 							<img src="img/icecream2.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>380₽</span>/кг</div>
+						<div class="icecream_price"><span>380</span>/кг</div>
 						<div class="icecream_description">Сливочно-кофейное с кусочками шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -176,7 +179,7 @@
 						<div class="item_img">
 							<img src="img/icecream3.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>355₽</span>/кг</div>
+						<div class="icecream_price"><span>355</span>/кг</div>
 						<div class="icecream_description">Сливочно-кулбничное с присыпкой из белого шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -185,7 +188,7 @@
 						<div class="item_img">
 							<img src="img/icecream4.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>415₽</span>/кг</div>
+						<div class="icecream_price"><span>415</span>/кг</div>
 						<div class="icecream_description">Сливочное крем-брюле с карамельной подливкой</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -194,7 +197,7 @@
 						<div class="item_img">
 							<img src="img/icecream5.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>325₽</span>/кг</div>
+						<div class="icecream_price"><span>325</span>/кг</div>
 						<div class="icecream_description">Сливочное с брусничным джемом</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -203,7 +206,7 @@
 						<div class="item_img">
 							<img src="img/icecream6.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>410₽</span>/кг</div>
+						<div class="icecream_price"><span>410</span>/кг</div>
 						<div class="icecream_description">Сливочное-черничное с цельными ягодами черники</div>
 				  	<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -212,7 +215,7 @@
 						<div class="item_img">
 							<img src="img/icecream7.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>375₽</span>/кг</div>
+						<div class="icecream_price"><span>375</span>/кг</div>
 						<div class="icecream_description">Сливочное-имонное с карамельной присыпкой</div>
 				  	<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -221,7 +224,7 @@
 						<div class="item_img">
 							<img src="img/icecream8.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>320₽</span>/кг</div>
+						<div class="icecream_price"><span>320</span>/кг</div>
 						<div class="icecream_description">Сливочное с шоколадной крошкой</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -230,7 +233,7 @@
 						<div class="item_img">
 							<img src="img/icecream9.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>440₽</span>/кг</div>
+						<div class="icecream_price"><span>440</span>/кг</div>
 						<div class="icecream_description">Сливочно-ванильное с кусочками шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -239,7 +242,7 @@
 						<div class="item_img">
 						<img src="img/icecream10.png" width="200" height="200" alt="Мороженое">
 					</div>
-						<div class="icecream_price"><span>435₽</span>/кг</div>
+						<div class="icecream_price"><span>435</span>/кг</div>
 						<div class="icecream_description">Сливочное с ментоловым сиропом</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -248,7 +251,7 @@
 						<div class="item_img">
 							<img src="img/icecream11.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>355₽</span>/кг</div>
+						<div class="icecream_price"><span>355</span>/кг</div>
 						<div class="icecream_description">Сливочное с кусочками темного шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -257,7 +260,7 @@
 						<div class="item_img">
 							<img src="img/icecream12.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>420₽</span>/кг</div>
+						<div class="icecream_price"><span>420</span>/кг</div>
 						<div class="icecream_description">Сливочное с мятным сиропом</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -273,12 +276,12 @@
 					
 				</section>
 			
-				
+        <div class="line">	</div>
 			</main>
 	
 	    <footer class="main_footer clearfix">  
 
-			  <section class="social">
+			  <section class="social clearfix">
 					<a class="social_btn social_btn_tw" href="#">Твиттер</a>
 					<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
 					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>

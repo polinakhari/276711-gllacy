@@ -7,107 +7,125 @@
 .sprite-Untitled-1 {
     width: 21px;
     height: 19px;
-    background-position: -10px -10px;
+    background-position: -8px -8px;
 }
 
 .sprite-Untitled-2 {
     width: 21px;
     height: 19px;
-    background-position: -10px -49px;
+    background-position: -45px -8px;
 }
 
 .sprite-Untitled-3 {
     width: 17px;
     height: 17px;
-    background-position: -10px -88px;
+    background-position: -82px -8px;
 }
 
 .sprite-Untitled-4 {
     width: 17px;
     height: 17px;
-    background-position: -10px -125px;
+    background-position: -115px -8px;
 }
 
 .sprite-Untitled-5 {
     width: 21px;
     height: 20px;
-    background-position: -10px -162px;
+    background-position: -148px -8px;
 }
 
 .sprite-Untitled-6 {
     width: 31px;
     height: 36px;
-    background-position: -10px -202px;
+    background-position: -185px -8px;
 }
 
 .sprite-Untitled-7 {
     width: 21px;
     height: 20px;
-    background-position: -10px -258px;
+    background-position: -8px -60px;
 }
 
 .sprite-______ {
     width: 39px;
     height: 38px;
-    background-position: -10px -298px;
+    background-position: -45px -44px;
 }
 
 .sprite-_________ {
     width: 49px;
     height: 49px;
-    background-position: -10px -356px;
+    background-position: -100px -44px;
+}
+
+.sprite-basket_black {
+    width: 21px;
+    height: 20px;
+    background-position: -165px -60px;
+}
+
+.sprite-basket_icecream1 {
+    width: 33px;
+    height: 33px;
+    background-position: -165px -96px;
+}
+
+.sprite-basket_icecream2 {
+    width: 33px;
+    height: 33px;
+    background-position: -8px -145px;
 }
 
 .sprite-checkbox {
     width: 20px;
     height: 20px;
-    background-position: -10px -425px;
+    background-position: -202px -60px;
 }
 
 .sprite-cow {
     width: 48px;
     height: 49px;
-    background-position: -10px -465px;
+    background-position: -57px -145px;
 }
 
 .sprite-facebook {
     width: 38px;
     height: 38px;
-    background-position: -10px -534px;
+    background-position: -121px -145px;
 }
 
 .sprite-heart {
     width: 15px;
     height: 13px;
-    background-position: -10px -592px;
+    background-position: -8px -96px;
 }
 
 .sprite-hit {
     width: 61px;
     height: 61px;
-    background-position: -10px -625px;
+    background-position: -238px -8px;
 }
 
 .sprite-insta {
     width: 38px;
     height: 38px;
-    background-position: -10px -706px;
+    background-position: -238px -85px;
 }
 
 .sprite-leaf {
     width: 49px;
     height: 49px;
-    background-position: -10px -764px;
+    background-position: -214px -139px;
 }
 
 .sprite-thermometer {
     width: 48px;
     height: 49px;
-    background-position: -10px -833px;
+    background-position: -121px -204px;
 }
 
 .sprite-vk {
     width: 38px;
     height: 38px;
-    background-position: -10px -902px;
+    background-position: -185px -204px;
 }

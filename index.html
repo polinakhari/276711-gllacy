@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 		
@@ -41,22 +42,24 @@
 					</nav>
 					<div class="user_block">
         		<a class="search_trigger" href="#"></a>
-						<div class="search_wrapper">
+						
 						<form class="search">
-							<input type="search" id="search_btn" name="search" placeholder="Что ищем?">	
+							<input type="text" id="search_btn" name="search" required>	
 							<label for="search_btn">Что ищем?</label>
 						</form>
-						</div>
+						
 						<a class="login_trigger" href="#">Вход</a>
 						<div class="login_wrapper">
 						<form class="login">
-							<input type="email" id="mail" name="email">
+							<input type="email" id="mail" name="email" required>
 							<label for="mail">Электронная почта</label>
-							<input type="password" id="password" name="password">
+							<input type="password" id="password" name="password" required>
 							<label for="password">Пароль</label>
 							<button type="button" class="login_btn">Войти</button>
+							<div class="sign_up">
 							<a href="#">Забыли пароль?</a>
 							<a href="#">Новая регистрация</a>
+							</div>
 						</form>
 						</div>
 						<a class="basket_trigger" href="#">Пусто</a>
@@ -93,13 +96,13 @@
 					<div class="announce_wrapper clearfix">
 						<article class="announce_block announce_background1">
 							<h2 class="content_title">Малинка даром!</h2>
-							<p>При покупке 2кг любого фруктового мароженного, добавим в ваш заказ банку
-							малинового варенья бесплатно</p>
+							<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+							малинового варенья бесплатно.</p>
 							<a href="#" class="btn">Хочу варенье!</a>
 						</article>
 						<article class="announce_block announce_background2">
 							<h2 class="content_title">Шоколадки даром!</h2>
-							<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+							<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
 							<a href="#" class="btn">Хочу шоколадки!</a>
 						</article>
 					</div>
@@ -108,7 +111,7 @@
 					  	<div class="item_img">
 						    <img src="img/icecream1.png" width="200" height="200" alt="Мороженое">
 					    </div>
-					  	<div class="icecream_price"><span>310₽ </span>/кг</div>
+					  	<div class="icecream_price"><span>310 </span>/кг</div>
 					  	<div class="icecream_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
 					  	<a href="#" class="quick_view btn">Быстрый просмотр</a>
 				  </div>
@@ -117,7 +120,7 @@
 						<div class="item_img">
 							<img src="img/icecream2.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>380₽</span>/кг</div>
+						<div class="icecream_price"><span>380</span>/кг</div>
 						<div class="icecream_description">Сливочно-кофейное с кусочками шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -126,7 +129,7 @@
 						<div class="item_img">
 							<img src="img/icecream3.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>355₽</span>/кг</div>
+						<div class="icecream_price"><span>355</span>/кг</div>
 						<div class="icecream_description">Сливочно-кулбничное с присыпкой из белого шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -135,27 +138,27 @@
 						<div class="item_img">
 							<img src="img/icecream4.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>415₽</span>/кг</div>
+						<div class="icecream_price"><span>415</span>/кг</div>
 						<div class="icecream_description">Сливочное крем-брюле с карамельной подливкой</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>						
 				</section>
 					
 				<section class="about_us clearfix">
-					<div class="about_us_header"> Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес 
+					<div class="about_us_header"> Магазин Глейси — это онлайн и офлайн магазин по продаже мороженного собственного производства на развес 
 					</div>
 				
 					<div class="about_us_feature"> 
-						<p>Все наше мороженное изготавливается на собстенном проиводстве, с использванием современного оборудования и проверенных временем технологий</p>
+						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</p>
 					</div>
 					<div class="about_us_feature">
-						<p>Закупка ингридиетов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывают долговременное сотрудничество.</p>
+						<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 					</div>
 					<div class="about_us_feature"> 
-						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки проиведены из натурального, экологически чистого сырья.</p>
+						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 					</div>					
 					<div class="about_us_feature"> 
-						<p>Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему свой превосходный вкус.</p>
+						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 					</div>				
 			  </section>						
 					
@@ -168,8 +171,9 @@
 						<div class="subscribe_form_inner">
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самоговкусного, что у нас проиходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>					
 			  		<form action="/echo" method="post" action="https://echo.htmlacademy.ru">
-							<label for="e-mail">Электронная почта</label>
-				  		<input type="email" name="email" id="e-mail" placeholder="Электронная почта" required>
+							
+				  		<input type="email" name="email" id="e_mail" class="e_mail"  required>
+              <label for="_mail">Электронная почта</label>
 							<button type="submit" class="btn" >Отправить</button>
 						</form>
 					  </div>			
@@ -183,7 +187,7 @@
 				
 				<div class="address">
 					
-					<p>Адрес нашего главное офиса и офлайн магазина:
+					<p>Адрес нашего  офиса и офлайн магазина:
 						<br>
 						<b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b>
 					</p>
@@ -200,7 +204,7 @@
 
 		<div class="main_content_wrapper ">
 			<footer class="main_footer clearfix">    			
-				<section class="social">
+				<section class="social clearfix">
 					<a class="social_btn social_btn_tw" href="#">Твиттер</a>
 					<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
 					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
@@ -228,31 +232,28 @@
 			<form action="https://echo.htmlacademy.ru" method="get" class="feedback">
 					<div class="close"></div>
 					<h2>Мы обязательно вам ответим!</h2>
-					<input type="text" id="login" name="login" placeholder="Как вас зовут?">
-					<label for="lodin">Как вас зовут?</label>
-					<input type="text" id="text" name="text" placeholder="Напишите что-нибудь...">
-					<label for="text">Напишите что-нибудь...</label>
-					<input type="text" id="email" name="email" placeholder="Ваша почта для ответа?">
-					<label for="email">Ваша почта для ответа?</label>
+				
+				<div class="input_wrapper">
+					<input type="text" id="login_name" name="login" required>
+					<label for="login_name">Как вас зовут?</label>
+										</div>
+				
+					<div class="input_wrapper">       
+						<textarea id="text" name="text" required></textarea>
+						<label for="text">Напишите что-нибудь...</label>
+						
+						</div>
+					<div class="input_wrapper">	
+						<input type="text" id="email" name="email" required>
+						<label for="email">Ваша почта для ответа?</label>
+						
+						</div>
 					<button type="submit" class="btn" >Отправить</button>
 			  </form>
 		</div>
 	</div>
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=kp7H0jU-c7v_3v3Na9AmSRX_U6OBGqPi&width=100%&height=430&id=yandex_map"></script>
-		<script>
-			var link = document.querySelector(".address .btn");
-			var feedback = document.querySelector(".feedback");
-			var close = feedback.querySelector(".close");
-			link.addEventListener("click", function(event) {
-        event.preventDefault();
-        feedback.classList.add("feedback_show");
-      });
-			 close.addEventListener("click", function(event) {
-        event.preventDefault();
-        feedback.classList.remove("feedback_show");
-      });
-			
-		</script>
+		<script src="js/script.js"></script>
 </body>
 </html>
 				
