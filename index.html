@@ -23,7 +23,7 @@
         	<nav class="main_navigation">
           	<ul class="navigation">
 						  <li>
-                <a href="#" class="main_navigation_link active">Каталог</a>
+                <a href="#" class="main_navigation_link">Каталог</a>
 						  	<ul class="submenu">
 							  	<li class="submenu_item"><a href="#" class="submenu_navigation_link ">Новинки</a></li>
 									<li class="submenu_item"><a href="catalog.html" class="submenu_navigation_link">Сливочное</a></li>
@@ -111,7 +111,7 @@
 					  	<div class="item_img">
 						    <img src="img/icecream1.png" width="200" height="200" alt="Мороженое">
 					    </div>
-					  	<div class="icecream_price"><span>310 </span>/кг</div>
+					  	<div class="icecream_price"><span>310</span>/кг</div>
 					  	<div class="icecream_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
 					  	<a href="#" class="quick_view btn">Быстрый просмотр</a>
 				  </div>
@@ -147,7 +147,7 @@
 				<section class="about_us clearfix">
 					<div class="about_us_header"> Магазин Глейси — это онлайн и офлайн магазин по продаже мороженного собственного производства на развес 
 					</div>
-				
+				<div class="feature_wrapper">
 					<div class="about_us_feature"> 
 						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</p>
 					</div>
@@ -159,17 +159,18 @@
 					</div>					
 					<div class="about_us_feature"> 
 						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-					</div>				
+					</div>	
+          </div>
 			  </section>						
 					
 				<div class="news_wrapper clearfix">
 					<article class="news_item last_news">
 						<h3>Новое в нашем блоге</h3>				
-						<a href="#" class="news">10 способов сервировки фруктовых щербетов в столу</a>
+						<a href="#" class="news">10 способов сервировки фруктовых щербетов к столу</a>
 					</article>
 					<div class="news_item subscribe_form">
 						<div class="subscribe_form_inner">
-						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самоговкусного, что у нас проиходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>					
+						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас проиходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>					
 			  		<form action="/echo" method="post" action="https://echo.htmlacademy.ru">
 							
 				  		<input type="email" name="email" id="e_mail" class="e_mail"  required>
@@ -226,7 +227,7 @@
 				</div>
 				<section class="footer_copyright">
 					<a class="btn_copyright" href="https://htmlacademy.ru"></a>
-					<p>Сделано в <a href="#">HTML Academy</a> © 2016 </p>
+					<p>Сделано в <a href="#" class="info">HTML Academy</a> © 2016 </p>
 				</section>					
 			</footer>
 			<form action="https://echo.htmlacademy.ru" method="get" class="feedback">
@@ -234,20 +235,22 @@
 					<h2>Мы обязательно вам ответим!</h2>
 				
 				<div class="input_wrapper">
-					<input type="text" id="login_name" name="login" required>
+					<input type="text" id="login_name" class="login_name" name="login" required>
 					<label for="login_name">Как вас зовут?</label>
 										</div>
 				
-					<div class="input_wrapper">       
+					
+					<div class="input_wrapper">	
+						<input type="text" id="email" name="email" class="email" required>
+						<label for="email">Ваша почта для ответа?</label>
+        </div>
+            <div class="input_wrapper">       
 						<textarea id="text" name="text" required></textarea>
 						<label for="text">Напишите что-нибудь...</label>
 						
 						</div>
-					<div class="input_wrapper">	
-						<input type="text" id="email" name="email" required>
-						<label for="email">Ваша почта для ответа?</label>
 						
-						</div>
+						
 					<button type="submit" class="btn" >Отправить</button>
 			  </form>
 		</div>

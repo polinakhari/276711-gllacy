@@ -15,11 +15,11 @@
         </a>
         <nav class="main_navigation">
           <ul class="navigation">
-            <li>
-              <a href="#" class="main_navigation_link active">Каталог</a>
+            <li class="active">
+              <a href="#" class="main_navigation_link">Каталог</a>
 							<ul class="submenu">
 								<li class="submenu_item"><a href="#" class="submenu_navigation_link ">Новинки</a></li>
-								<li class="active submenu_item"><a href="#" class="submenu_navigation_link">Сливочное</a></li>
+								<li class="submenu_item"><a href="#" class="submenu_navigation_link active">Сливочное</a></li>
 								<li  class="submenu_item"><a href="#" class="submenu_navigation_link">Щербеты</a></li>
 								<li  class="submenu_item"><a href="#" class="submenu_navigation_link">Фруктовый лед</a></li>
 								<li  class="submenu_item"><a href="#" class="submenu_navigation_link ">Мелорин</a></li>
@@ -54,7 +54,7 @@
               </div>
 						</form>
 						</div>
-					<a class="basket_trigger" href="#">2 товара</a>
+					<a class="basket_trigger total_basket" href="#">2 товара</a>
 					<div class="basket clearfix">
 						<table>
 							<tr>
@@ -86,7 +86,7 @@
 			<main>
 				<div class="content_wrapper clearfix">
       	  <ul class="breadcrumbs">
-					  <li><a href="#">Главная   </a></li>
+					  <li><a href="index.html">Главная   </a></li>
 						<li>» </li>
 					  <li><a href="#">Каталог   </a></li> 
 						<li>» </li>
@@ -97,7 +97,7 @@
 			  <form class="filter" method="post" action="https://echo.htmlacademy.ru">
 					<div class="sort_controls">
 				  <label for="sort" class="filter_name">Сортировка:</label> 
-				  <select id="sort" name="sort">
+				  <select id="sort" name="sort" class="sort">
             <option value="popular">по популярности</option>
             <option value="price low">сначала недорогие</option>
             <option value="price high">сначала дорогие</option>
@@ -123,31 +123,31 @@
 						<div class="fat_controls">
 							<span class="filter_name">Жирность:</span>
 				  <div class="fat">		
-						<label>
-							<input id="zero" type="radio" name="fat" ><span class="radio_button"></span>
-			  		 0%</label>
-						<label><input id="ten" type="radio" name="fat" checked><span class="radio_button"></span>
-						 до 10%</label>
-						<label><input id="thirty" type="radio" name="fat"><span class="radio_button"></span>
-						до 30%</label>
-						<label><input id="above_30" type="radio" name="fat"><span class="radio_button"></span>
-						выше 30%</label>					
+						
+						<input id="zero" type="radio" name="fat" >
+			  		<label for="zero" class="radio_button"> 0%</label>
+						<input id="ten" type="radio" name="fat" checked>
+						<label for="ten" class="radio_button"> до 10%</label>
+						<input id="thirty" type="radio" name="fat">
+						<label for="thirty" class="radio_button">до 30%</label>
+						<input id="above_30" type="radio" name="fat">
+						<label for="above_30" class="radio_button">выше 30%</label>					
 					</div>
 							</div>
 					<div class="fillers_controls">	
 					<span class="filter_name">Наполнители:</span>
 					<div class="fillers">	
 						
-						<label><input id="choco" type="checkbox" name="choco" checked>
-							<span class="checkbox_button"></span>Шоколадные</label>
-							<label><input id="sugar" type="checkbox" name="sugar" checked>
-						<span class="checkbox_button"></span>Сахарные присыпки</label>
-							<label><input id="fruit" type="checkbox" name="fruit" >
-						<span class="checkbox_button"></span>Фрукты</label>
-							<label><input id="syrup" type="checkbox" name="syrup" >
-						<span class="checkbox_button"></span>Сиропы</label>
-							<label><input id="jam" type="checkbox" name="jam" >
-								<span class="checkbox_button"></span>Джемы</label>		
+						<input id="choco" type="checkbox" name="choco" checked>
+							<label for="choco" class="checkbox_button">Шоколадные</label>
+							<input id="sugar" type="checkbox" name="sugar" checked>
+						<label for="sugar" class="checkbox_button">Сахарные присыпки</label>
+							<input id="fruit" type="checkbox" name="fruit" >
+						<label for="fruit" class="checkbox_button">Фрукты</label>
+							<input id="syrup" type="checkbox" name="syrup" >
+						<label for="syrup" class="checkbox_button">Сиропы</label>
+							<input id="jam" type="checkbox" name="jam" >
+								<label for="jam" class="checkbox_button">Джемы</label>		
 					</div>
 						
 						</div>					
@@ -161,7 +161,7 @@
 					  <div class="item_img">
 						  <img src="img/icecream1.png" width="200" height="200" alt="Мороженое">
 					  </div>
-					  <div class="icecream_price"><span>310 </span>/кг</div>
+					  <div class="icecream_price  icecream_price_catalog"><span>310</span>/кг</div>
 					  <div class="icecream_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
 					  <a href="#" class="quick_view btn">Быстрый просмотр</a>
 				  </div>
@@ -170,7 +170,7 @@
 						<div class="item_img">
 							<img src="img/icecream2.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>380</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>380</span>/кг</div>
 						<div class="icecream_description">Сливочно-кофейное с кусочками шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -179,7 +179,7 @@
 						<div class="item_img">
 							<img src="img/icecream3.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>355</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>355</span>/кг</div>
 						<div class="icecream_description">Сливочно-кулбничное с присыпкой из белого шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -188,7 +188,7 @@
 						<div class="item_img">
 							<img src="img/icecream4.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>415</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>415</span>/кг</div>
 						<div class="icecream_description">Сливочное крем-брюле с карамельной подливкой</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -197,7 +197,7 @@
 						<div class="item_img">
 							<img src="img/icecream5.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>325</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>325</span>/кг</div>
 						<div class="icecream_description">Сливочное с брусничным джемом</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -206,7 +206,7 @@
 						<div class="item_img">
 							<img src="img/icecream6.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>410</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>410</span>/кг</div>
 						<div class="icecream_description">Сливочное-черничное с цельными ягодами черники</div>
 				  	<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -215,7 +215,7 @@
 						<div class="item_img">
 							<img src="img/icecream7.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>375</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>375</span>/кг</div>
 						<div class="icecream_description">Сливочное-имонное с карамельной присыпкой</div>
 				  	<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -224,7 +224,7 @@
 						<div class="item_img">
 							<img src="img/icecream8.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>320</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>320</span>/кг</div>
 						<div class="icecream_description">Сливочное с шоколадной крошкой</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -233,7 +233,7 @@
 						<div class="item_img">
 							<img src="img/icecream9.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>440</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>440</span>/кг</div>
 						<div class="icecream_description">Сливочно-ванильное с кусочками шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -242,7 +242,7 @@
 						<div class="item_img">
 						<img src="img/icecream10.png" width="200" height="200" alt="Мороженое">
 					</div>
-						<div class="icecream_price"><span>435</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>435</span>/кг</div>
 						<div class="icecream_description">Сливочное с ментоловым сиропом</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -251,7 +251,7 @@
 						<div class="item_img">
 							<img src="img/icecream11.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>355</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>355</span>/кг</div>
 						<div class="icecream_description">Сливочное с кусочками темного шоколада</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -260,7 +260,7 @@
 						<div class="item_img">
 							<img src="img/icecream12.png" width="200" height="200" alt="Мороженое">
 						</div>
-						<div class="icecream_price"><span>420</span>/кг</div>
+						<div class="icecream_price icecream_price_catalog"><span>420</span>/кг</div>
 						<div class="icecream_description">Сливочное с мятным сиропом</div>
 						<a href="#" class="quick_view btn">Быстрый просмотр</a>
 					</div>
@@ -303,7 +303,7 @@
 				</div>
 				<section class="footer_copyright">
 					<a class="btn_copyright" href="https://htmlacademy.ru"></a>
-					<p>Сделано в <a href="#">HTML Academy</a> © 2016 </p>
+					<p>Сделано в <a href="#" class="info">HTML Academy</a> © 2016 </p>
 				</section>		
 			</footer>			
 	  </div>
