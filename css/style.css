@@ -517,7 +517,7 @@ li:hover .submenu {
 }
 .basket_trigger {
     position: relative;
-    padding: 7px 34px 9px 44px;
+    padding: 7px 33px 9px 44px;
     background: rgba(255, 255, 255, .2);
     border-radius: 16px;
     text-decoration: none;
@@ -551,7 +551,7 @@ li:hover .submenu {
     background-position: -164px -59px;
 }
 .total_basket {
-    padding: 7px 16px 9px 44px;
+    padding: 7px 15px 9px 44px;
     background-color: #f8f7f4;
     color: #313131;
 }
@@ -661,7 +661,8 @@ tr {
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
-.basket_trigger:hover + .basket {
+.basket_trigger:hover + .basket,
+.basket:hover{
     visibility: visible;
     opacity: 1;
 }
@@ -738,6 +739,7 @@ tr {
     border-radius: 20px;
     color: #ffffff;
     cursor: pointer;
+    outline: none;
 }
 .sort {
     min-width: 193px;
@@ -1344,6 +1346,7 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     padding: 10px 14px;
     box-sizing: border-box;
     cursor: pointer;
+    outline: none;
   
 }
 .subscribe_form_inner input:hover {
@@ -1656,12 +1659,11 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     font-size: 0px;
     line-height: 0px;
 }
-.social a {
-   
-  width: 38px;
+.social_btn {
+  vertical-align: middle;
   display: inline-block;
-  height: 38px;
-  }
+  margin-right: 17px;  
+    }
 .social_btn:before {
     content: " ";
     position: absolute;
@@ -1670,6 +1672,8 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     height: 38px;
     border:  3px solid rgba(255, 255, 255, 0);
     box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;        
 }
 .social_btn_tw:before {
     background: url(../img/spritesheet.png) -10px -298px no-repeat;
