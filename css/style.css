@@ -1668,12 +1668,12 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     content: " ";
     position: absolute;
     border-radius: 50%;
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     border:  3px solid rgba(255, 255, 255, 0);
     box-sizing: border-box;
     display: inline-block;
-    vertical-align: middle;        
+    vertical-align: middle;    
 }
 .social_btn_tw:before {
     background: url(../img/spritesheet.png) -10px -298px no-repeat;
@@ -1698,13 +1698,13 @@ input[type="checkbox"]:checked + .checkbox_button::after {
 .social_btn_inst:hover:before,
 .social_btn_fb:hover:before,
 .social_btn_vk:hover:before {
-    border:  3px solid rgba(255, 255, 255, .7);
+    box-shadow: inset 0 0 0 3px  rgba(255, 255, 255, .7);
 }
 .social_btn_tw:active:before,
 .social_btn_inst:active:before,
 .social_btn_fb:active:before,
 .social_btn_vk:active:before {
-    box-shadow: inset 0 2px 1px 0 #888;    
+    box-shadow: inset 0px 2px 1px 0px #888,inset 0 0 0 3px  rgba(255, 255, 255, .7);
 }
 .main_footer_info {
     float: left;
