@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style_short.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <input type="radio" id="btn_1" name="slider_btns" checked >
@@ -40,15 +40,15 @@
           <div class="user_block">
             <a class="search_trigger" href="#"></a>						
             <form class="search">
-              <input type="text" id="search_btn" name="search" required>	
+              <input type="text" id="search_btn" name="search" class="search_input" required>	
               <label for="search_btn">Что ищем?</label>
             </form>
             <a class="login_trigger" href="#">Вход</a>
             <div class="login_wrapper">
               <form class="login">
-                <input type="email" id="mail" name="email" required>
+                <input type="email" id="mail" name="email" class="mail" required>
                 <label for="mail">Электронная почта</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" class="password" required>
                 <label for="password">Пароль</label>
                 <button type="button" class="login_btn">Войти</button>
                 <div class="sign_up">
@@ -184,7 +184,7 @@
               <br>
               ( 10 до 20 ежедневно)					  	
             </p>
-            <a href="#" class="btn">Форма обратной связи </a>
+            <a href="feedback.html" class="btn">Форма обратной связи </a>
           </div>
         </div>
       </div>
@@ -227,7 +227,7 @@
             <label for="email">Ваша почта для ответа?</label>
           </div>
           <div class="input_wrapper">       
-            <textarea id="text" name="text" required></textarea>
+            <textarea id="text" name="text" class="write" required></textarea>
             <label for="text">Напишите что-нибудь...</label>						
           </div>
           <button type="submit" class="btn" >Отправить</button>

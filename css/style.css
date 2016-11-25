@@ -4,7 +4,7 @@ body {
     font-weight: 400;
     color: #FFFFFF;
     font-weight: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: #849d8f;
@@ -139,6 +139,7 @@ nav li {
 }
 .navigation > li:hover {
     background-color: #f8f7f4;
+    text-decoration: none;
 }
 .navigation .active {
     background-color: #d07058;
@@ -154,10 +155,10 @@ nav li {
 .main_navigation_link:nth-child(1) {
     padding-bottom: 30px;
 }
-.navigation > li:hover .main_navigation_link {
+li:hover .main_navigation_link {
     color: #000000;
 }
-nav ul > li {
+.navigation > li {
     position: relative;
 }
 .submenu {
@@ -176,7 +177,7 @@ nav ul > li {
     overflow: hidden;
     font-size: 14px;
     line-height: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto","Arial", sans-serif;
     box-shadow: 0 20px 25px 0 rgba(0, 0, 0, .35);
 }
 .submenu li {
@@ -186,7 +187,7 @@ nav ul > li {
     color: #000000;
     padding: 9px 20px 6px;
     font-size: 14px;
-    font-family: "Roboto", arial, sans-serif;
+    font-family: "Roboto","Arial", sans-serif;
     display: block;
     background-color: transparent;
     -webkit-transition: background-color .5s ease-out;
@@ -316,25 +317,25 @@ li:hover .submenu {
     left: 19px;
     pointer-events: none;
 }
-.search input:focus + label {
+.search_input:focus + label {
     top: -5px;
     color: #8fbdec;
     font-size: 11px;
     line-height: 13px;
     font-weight: 400;
 }
-.search input:focus {
+.search_input:focus {
     padding: 8px 12px;
     border: 1px solid #8fbdec;
 }
-.search input[required]:not(:focus):valid ~ label {
+.search_input[required]:not(:focus):valid ~ label {
     top: -5px;
     color: #b2b2b1;
     font-size: 11px;
     line-height: 13px;
     font-weight: 400;
 }
-.search input[required]:not(:focus):valid {
+.search_input[required]:not(:focus):valid {
     color: #323232;
     font-size: 16px;
     line-height: 24px;
@@ -418,28 +419,28 @@ li:hover .submenu {
 .login label:nth-of-type(2) {
     top: 87px;
 }
-.login input:focus + label {
+.mail:focus + label {
     top: -2px;
     color: #8fbdec;
     font-size: 11px;
     line-height: 13px;
     font-weight: 400;
 }
-.login input:nth-of-type(2):focus + label {
+.password:nth-of-type(2):focus + label {
     top: 63px;
     color: #8fbdec;
     font-size: 11px;
     line-height: 13px;
     font-weight: 400;
 }
-.login input[required]:not(:focus):valid + label {
+.mail[required]:not(:focus):valid + label {
     top: -2px;
     color: #b2b2b1;
     font-size: 11px;
     line-height: 13px;
     font-weight: 400;
 }
-.login input:nth-of-type(2)[required]:not(:focus):valid + label {
+.password[required]:not(:focus):valid + label {
     top: 63px;
     color: #b2b2b1;
     font-size: 11px;
@@ -678,7 +679,7 @@ tr {
 }
 .working_time {
     float: right;
-    margin-top: 15px;
+    margin-top: 18px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
@@ -693,7 +694,7 @@ tr {
 }
 .content_wrapper {
     margin-bottom: 28px;
-    margin-top: -33px;
+    left: -3px;
 }
 .breadcrumbs {
     word-spacing: 7px;
@@ -704,6 +705,7 @@ tr {
     line-height: 16px;
     font-weight: 400;
     margin-bottom: 7px;
+    margin-top: 0px;
 }
 .breadcrumbs a {
     text-decoration: underline;
@@ -805,15 +807,13 @@ tr {
 .radio_button::before {
     content: " ";
     position: absolute;
-    top: 2px;
+    top: 0px;
     left: 7px;
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     border: 1px solid #f8f7f4;
-}
-.radio_button::before:hover {
-    border: 2px solid #f8f7f4;
+    box-sizing: border-box;
 }
 input[type="radio"]:checked + .radio_button::after {
     content: " ";
@@ -822,7 +822,7 @@ input[type="radio"]:checked + .radio_button::after {
     height: 12px;
     border-radius: 50%;
     left: 11px;
-    top: 6px;
+    top: 4px;
     background-color: #f8f7f4;
 }
 .fillers input[type="checkbox"] {
@@ -846,15 +846,15 @@ input[type="radio"]:checked + .radio_button::after {
 .checkbox_button::before {
     content: " ";
     position: absolute;
-    top: 2px;
-    left: 7px;
-    ;
-    height: 18px;
-    width: 18px;
+    top: 0px;
+    left: 7px;    
+    height: 20px;
+    width: 20px;
     border-radius: 3px;
     border: 1px solid #f8f7f4;
+    box-sizing: border-box;
 }
-.checkbox_button::before:hover {
+.checkbox_button not:hover::before {
     border: 2px solid #f8f7f4;
 }
 input[type="checkbox"]:checked + .checkbox_button::after {
@@ -862,11 +862,22 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     position: absolute;
     border-radius: 50%;
     left: 7px;
-    top: 2px;
+    top: 4px;
     background: url(../img/spritesheet.png) no-repeat;
     width: 20px;
     height: 20px;
-    background-position: -202px -60px;
+    background-position: -202px -64px;
+}
+input[type="radio"]:disabled + .radio_button::before,
+input[type="checkbox"]:disabled + .checkbox_button::before
+input[type="radio"]:checked:disabled + .radio_button::before,
+input[type="checkbox"]:checked:disabled + .checkbox_button::before,
+input[type="radio"]:checked:disabled + .radio_button::after,
+input[type="checkbox"]:checked:disabled + .checkbox_button::after{
+    opacity: 0.4;
+}
+.radio_button:hover:not(:disabled):before {
+    border: 2px solid #f8f7f4;
 }
 .range_controls {
     position: relative;
@@ -1110,6 +1121,7 @@ input[type="checkbox"]:checked + .checkbox_button::after {
 }
 .quick_view {
     position: absolute;
+    left: 10px;
     display: none;
     margin: 0;
     padding: 0;
@@ -1175,6 +1187,7 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     background-position: -182px -2px;
     width: 32px;
     height: 41px;
+    top: 9px;
 }
 .btn.quick_view {
     padding: 10px 16px;
@@ -1275,25 +1288,25 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     left: 10px;
 }
 .news_wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
 }
 .news_item {
     float: left;
     width: 420px;
     color: #323232;
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
+    min-height: 220px;
 }
 .news_item h3 {
     margin: 0px;
     font-size: 16px;
     line-height: 27px;
     font-weight: 500;
-    font-family: "Roboto", arial, sans-serif;
+    font-family: "Roboto","Arial", sans-serif;
     margin-bottom: 3px;
     color: #5a5a5a;
 }
 .news {
-    margin-bottom: 40px;
     text-decoration: none;
     color: #353535;
     background: rgba(255, 255, 255, .8);
@@ -1303,17 +1316,17 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     text-decoration: underline;
     font-size: 24px;
     line-height: 30px;
-    font-family: "Roboto", arial, sans-serif;
+    font-family: "Roboto","Arial", sans-serif;
 }
 .last_news {
-    width: 380px;
+    width: 420px;
     margin-right: 20px;
     background: #ffffff url(../img/news_background.jpg) repeat center top;
     border-radius: 14px;
     padding: 20px;
-    padding-bottom: 80px;
-    color: #4b4b4b;
-    height: 120px;
+    padding-bottom: 20px;
+    color: #4b4b4b;    
+    box-sizing: border-box;
 }
 .subscribe_form {
     background: -webkit-repeating-linear-gradient(314deg, #f8f7f4 2%, #92cdff 2%, #92cdff 3.5%, #f8f7f4 3.5%, #f8f7f4 5%, #fe9e90 5%, #fe9e90 6.5%, #f8f7f4 6.5%, #f8f7f4 8%);
@@ -1412,7 +1425,7 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     font-weight: 700;
 }
 .map {
-    background: url(../img/map.jpg) no-repeat center top;
+    background: #f5f2e4 url(../img/map.jpg) no-repeat center top;
     margin-top: -40px;
     position: relative;
     min-height: 430px;
@@ -1424,9 +1437,9 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     border-radius: 10px;
     position: absolute;
     top: 63px;
-    right: 280px;
+    right: calc(50% - 430px);
     bottom: 100px;
-    height: 306px;
+    min-height: 305px;
 }
 .address p {
     margin-top: 29px;
@@ -1476,7 +1489,7 @@ input[type="checkbox"]:checked + .checkbox_button::after {
 }
 .page {
     float: right;
-    width: 200px;
+    min-width: 200px;
     margin-top: 48px;
     text-decoration: none;
     position: relative;
@@ -1500,12 +1513,13 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     display: inline-block;
     margin-right: 2px;
 }
-.page a:not(.active):hover {
-    background-color: rgba(255, 255, 255, .2);
-}
-.page .active {
+.page .active,
+.page a:active {
     background: rgba(255, 255, 255, 1);
     color: #000000;
+}
+.page a:not(.active):hover {
+    background-color: rgba(255, 255, 255, .2);
 }
 .arrow {
     width: 10px;
@@ -1541,8 +1555,7 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     border-radius: 8px;
     width: 430px;
     color: #323232;
-    padding: 24px;
-    padding-top: 20px;
+    padding: 15px 24px 24px;   
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1551,11 +1564,10 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     z-index: 20;
 }
 .feedback h2 {
-    margin: 0px;
+    margin: 0 0 6px;
     font-size: 24px;
     line-height: 28px;
-    font-weight: 500;
-    margin-bottom: 23px;
+    font-weight: 500;   
 }
 .feedback input[type="text"],
 .feedback textarea {
@@ -1569,31 +1581,31 @@ input[type="checkbox"]:checked + .checkbox_button::after {
 }
 .login_name,
 .email {
-    width: 265px;
-    height: 43px;
+    width: 268px;
+    min-height: 42px;
     box-sizing: border-box;
 }
 .feedback textarea {
-    width: 400px;
-    height: 155px;
+    width: 428px;
+    min-height: 155px;
     resize: none;
     box-sizing: border-box;
 }
 .feedback .btn {
     float: right;
-    margin: 25px 0px;
-    padding: 10px 24px;
-    font-family: "Roboto", arial, sans-serif;
-    color: #FFFFFF;
-    text-decoration: none;
-    background-image: -webkit-linear-gradient(top, #f26843, #e84c36);
-    background-image: linear-gradient(to bottom, #f26843, #e84c36);
+    margin: 18px 0 2px;
+    padding: 9px 21px 11px;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(top,#f26843,#e84c36);
+    background-image: linear-gradient(to bottom,#f26843,#e84c36);
     border-radius: 22px;
     z-index: 10;
     vertical-align: middle;
     border: none;
     cursor: pointer;
-    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
 }
 .feedback .btn:hover {
     background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -1603,7 +1615,7 @@ input[type="checkbox"]:checked + .checkbox_button::after {
 .input_wrapper {
     position: relative;
     overflow: hidden;
-    padding: 15px 0px;
+    padding: 15px 0 7px;
 }
 .feedback input,
 .feedback textarea {
@@ -1614,7 +1626,7 @@ input[type="checkbox"]:checked + .checkbox_button::after {
     position: absolute;
     -webkit-transition: top 0.2s;
     transition: top 0.2s;
-    padding: 7px 6px;
+    padding: 7px 14px;
     top: 18px;
     color: #b4b4b4;
     pointer-events: none;
@@ -1631,8 +1643,9 @@ input[type="checkbox"]:checked + .checkbox_button::after {
 .feedback textarea:focus {
     border: 1px solid #8fbdec;
 }
-.feedback input[type="text"][required]:not(:focus):valid ~ label,
-.feedback textarea[required]:not(:focus):valid ~ label {
+.login_name[type="text"][required]:not(:focus):valid ~ label,
+.email[type="text"][required]:not(:focus):valid ~ label
+.write[required]:not(:focus):valid ~ label {
     top: -10px;
     color: #b2b2b1;
     font-size: 11px;
@@ -1697,7 +1710,10 @@ input[type="checkbox"]:checked + .checkbox_button::after {
 .social_btn {
     vertical-align: middle;
     display: inline-block;
-    margin-right: 17px;
+    margin-right: 11px;
+    height: 44px;
+    width: 38px;
+    position: relative;
 }
 .social_btn:before {
     content: " ";
@@ -1717,17 +1733,17 @@ input[type="checkbox"]:checked + .checkbox_button::after {
 .social_btn_inst:before {
     background: url(../img/spritesheet.png) -10px -705px no-repeat;
     background-position: -238px -85px;
-    left: 50px;
+    left: -3px;
 }
 .social_btn_fb:before {
     background: url(../img/spritesheet.png) -10px -534px no-repeat;
     background-position: -121px -145px;
-    left: 99px;
+    left: -3px;
 }
 .social_btn_vk:before {
     background: url(../img/spritesheet.png) -10px -902px no-repeat;
     background-position: -185px -204px;
-    left: 148px;
+    left: -3px;
 }
 .social_btn_tw:hover:before,
 .social_btn_inst:hover:before,
